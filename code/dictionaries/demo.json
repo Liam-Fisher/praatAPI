@@ -1,0 +1,128 @@
+{
+    "speaker": {
+        "type": "female",
+        "tubes": 2
+    },
+    "duration": 1.0,
+    "samplingrate": 44100.0,
+    "oversampling": 25,
+    "filename": "my_word",
+    "muscles": {
+        "Lungs": {
+            "times": [0.0, 0.1],
+            "values": [0.2, 0.0]
+        }, 
+        "Interarytenoid": {
+            "times": [0.0, 1.0],
+            "values": [0.5, 0.5]
+        },
+        "Cricothyroid": {
+            "times": [],
+            "values": []
+        },
+        "Vocalis": {
+            "times": [],
+            "values": []
+        },
+        "Thyroarytenoid": {
+            "times": [],
+            "values": []
+        },
+        "PosteriorCricoarytenoid": {
+            "times": [],
+            "values": []
+        },
+        "LateralCricoarytenoid": {
+            "times": [],
+            "values": []
+        },
+        "Stylohyoid": {
+            "times": [],
+            "values": []
+        },
+        "Sternohyoid": {
+            "times": [],
+            "values": []
+        },
+        "Thyropharyngeus": {
+            "times": [],
+            "values": []
+        },
+        "LowerConstrictor": {
+            "times": [],
+            "values": []
+        },
+        "MiddleConstrictor": {
+            "times": [],
+            "values": []
+        },
+        "UpperConstrictor": {
+            "times": [],
+            "values": []
+        },
+        "Sphincter": {
+            "times": [],
+            "values": []
+        },
+        "Hyoglossus": {
+            "times": [],
+            "values": []
+        },
+        "Styloglossus": {
+            "times": [],
+            "values": []
+        },
+        "Genioglossus": {
+            "times": [],
+            "values": []
+        },
+        "UpperTongue": {
+            "times": [],
+            "values": []
+        },
+        "LowerTongue": {
+            "times": [],
+            "values": []
+        },
+        "TransverseTongue": {
+            "times": [],
+            "values": []
+        },
+        "VerticalTongue": {
+            "times": [],
+            "values": []
+        },
+        "Risorius": {
+            "times": [],
+            "values": []
+        },
+        "OrbicularisOris":{
+            "times": [0.25],
+            "values": [0.2]
+        },
+        "LevatorPalatini": {
+            "times": [0.0, 1.0],
+            "values": [1.0, 1.0]
+        },
+        "TensorPalatini": {
+            "times": [],
+            "values": []
+        },
+        "Masseter": {
+            "times": [0.25],
+            "values": [0.7]
+        },
+        "Mylohyoid": {
+            "times": [],
+            "values": []
+        },
+        "LateralPterygoid": {
+            "times": [],
+            "values": []
+        },
+        "Buccinator": {
+            "times": [],
+            "values": []
+        }
+    }
+}

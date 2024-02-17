@@ -1,0 +1,35 @@
+
+speakerID = Create Speaker: "me", "female", "1"
+wordID = Create Artword: "word", 4.00   
+selectObject: wordID
+Set target: 0.4, 0.3, "Lungs"
+Set target: 3.6, 0.0, "Lungs"
+Set target: 0.0, -0.5, "Interarytenoid"
+Set target: 4.0, -0.5, "Interarytenoid"
+Set target: 1.9, -0.6, "Vocalis"
+Set target: 0.3, 0.0, "Thyroarytenoid"
+Set target: 0.9, -0.5, "Thyroarytenoid"
+Set target: 1.5, 0.0, "Thyroarytenoid"
+Set target: 0.0, 0.9, "Stylohyoid"
+Set target: 4.0, 0.9, "Stylohyoid"
+Set target: 1.0, 0.5, "Thyropharyngeus"
+Set target: 1.3, 0.8, "LowerConstrictor"
+Set target: 1.1, 0.0, "MiddleConstrictor"
+Set target: 2.1, 0.2, "MiddleConstrictor"
+Set target: 3.0, 0.0, "MiddleConstrictor"
+Set target: 2.9, -0.7, "UpperConstrictor"
+Set target: 0.0, -0.6, "Hyoglossus"
+Set target: 4.0, -0.6, "Hyoglossus"
+Set target: 0.0, -0.3, "OrbicularisOris"
+Set target: 4.0, -0.3, "OrbicularisOris"
+Set target: 0.0, 0.9, "LevatorPalatini"
+Set target: 4.0, 0.9, "LevatorPalatini"
+Set target: 1.3, 0.0, "TensorPalatini"
+Set target: 2.2, -0.9, "TensorPalatini"
+Set target: 3.0, 0.0, "TensorPalatini"
+Set target: 0.0, 0.7, "Mylohyoid"
+Set target: 4.0, 0.7, "Mylohyoid"
+
+plusObject: speakerID
+soundID = To Sound: 88200, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Save as WAV file: "soundfiles\_batch48_1668489375878_sf.wav"

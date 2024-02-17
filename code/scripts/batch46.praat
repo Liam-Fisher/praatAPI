@@ -1,0 +1,38 @@
+
+speakerID = Create Speaker: "me", "male", "2"
+wordID = Create Artword: "word", 4.00   
+selectObject: wordID
+Set target: 0.4, 0.3, "Lungs"
+Set target: 3.6, 0.0, "Lungs"
+Set target: 0.0, -0.7, "Interarytenoid"
+Set target: 4.0, -0.7, "Interarytenoid"
+Set target: 0.0, -0.8, "PosteriorCricoarytenoid"
+Set target: 4.0, -0.8, "PosteriorCricoarytenoid"
+Set target: 2.8, -0.4, "Stylohyoid"
+Set target: 0.0, 0.5, "Thyropharyngeus"
+Set target: 4.0, 0.5, "Thyropharyngeus"
+Set target: 2.1, 0.5, "LowerConstrictor"
+Set target: 0.0, 0.4, "Hyoglossus"
+Set target: 4.0, 0.4, "Hyoglossus"
+Set target: 0.0, 0.6, "Styloglossus"
+Set target: 4.0, 0.6, "Styloglossus"
+Set target: 0.0, -0.5, "UpperTongue"
+Set target: 4.0, -0.5, "UpperTongue"
+Set target: 1.6, 0.0, "LowerTongue"
+Set target: 2.4, 0.4, "LowerTongue"
+Set target: 3.3, 0.0, "LowerTongue"
+Set target: 0.0, 0.6, "VerticalTongue"
+Set target: 4.0, 0.6, "VerticalTongue"
+Set target: 0.0, -0.2, "Risorius"
+Set target: 4.0, -0.2, "Risorius"
+Set target: 0.0, -0.9, "OrbicularisOris"
+Set target: 4.0, -0.9, "OrbicularisOris"
+Set target: 0.0, -0.6, "LevatorPalatini"
+Set target: 4.0, -0.6, "LevatorPalatini"
+Set target: 2.1, -0.6, "Mylohyoid"
+Set target: 2.8, -0.3, "LateralPterygoid"
+Set target: 1.4, -0.5, "Buccinator"
+
+plusObject: speakerID
+soundID = To Sound: 88200, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0
+Save as WAV file: "soundfiles\_batch46_1668488976802_sf.wav"

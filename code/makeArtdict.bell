@@ -1,0 +1,32 @@
+$globals = `globals scramble(`male `female `child ):1  scramble(1 2 10):1 $x1 ;   
+$activities = [1 [0. 0. 0.][0.1 0.3 0.] [0.9 0. 0.][1. 0. 0.]];
+for $act $index in typeProbs with @unwrap 1 do (
+    ## can be "none", "constant", "triangle","ramp" or "breakpoint"
+    $typeSeed = random(0, 1000);
+    ##print(`index $index);
+    ##print(`seed $typeSeed);
+    ##print(`probs $act);
+    if $typeSeed < ($act:1) then (
+    ##print(`none );
+    $activities _= [($index + 1) [0. 0. 0.][1. 0. 0.]]
+    )
+    else if $typeSeed < ($act:2) then (
+        ##print(`constant );
+        $constant = float(random(-1000, 1000)/1000);
+        $activities _= [($index + 1)[0. $constant 0.][1. $constant 0.]]
+    )
+    else if $typeSeed < ($act:3) then (
+        ##print(`ramp );
+        $rampX = float(random(250, 750)/1000);
+        $rampY = float(random(-1000, 1000)/1000);
+        $activities _= [($index + 1)[0. 0. 0.][$rampX $rampY 0.][1. 0. 0.]]
+     )
+    else  (    ##print(`triangle );
+        $rampX = float(random(0, 500)/1000);
+        $lengthX = float(random(0, 500)/1000);
+        $rampY = float(random(-1000, 1000)/1000);
+        $activities _= [($index + 1)[0. 0. 0.] [$rampX 0. 0. ][($rampX+$lengthX/2.0) $rampY 0.][($rampX+$lengthX) 0. 0.][1. 0. 0.]] 
+    )
+);
+$o1 = $activities;
+$globals 
